@@ -46,6 +46,17 @@ class PostResource extends Resource
             // Others Card for status and categories (Right side)
             Forms\Components\Card::make()
                 ->schema([
+                    Forms\Components\Toggle::make('stiky')
+                    ->label('Sticky')
+                    ->default(false),
+
+                Forms\Components\Toggle::make('top')
+                    ->label('Top')
+                    ->default(false),
+
+                Forms\Components\Toggle::make('features')
+                    ->label('Features')
+                    ->default(false),
                     Forms\Components\Select::make('status')
                         ->options([
                             'draft' => 'Draft',
@@ -92,9 +103,20 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\ImageColumn::make('thumbnail'),
                 Tables\Columns\TextColumn::make('title')
                     ->searchable(),
-                Tables\Columns\ImageColumn::make('thumbnail'),
+                    Tables\Columns\BooleanColumn::make('stiky')->label('Sticky'),
+                    Tables\Columns\BooleanColumn::make('top')->label('Top'),
+                    Tables\Columns\BooleanColumn::make('features')->label('Features'),
+                Tables\Columns\TextColumn::make('view')
+                ->badge()
+                ->colors([
+                    'danger' => fn ($state): bool => $state < 10,
+                    'warning' => fn ($state): bool => $state >= 10 && $state < 100,
+                    'primary' => fn ($state): bool => $state >= 100 && $state < 1000,
+                    'success' => fn ($state): bool => $state >= 1000,
+                ]),
                 Tables\Columns\TextColumn::make('status'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
