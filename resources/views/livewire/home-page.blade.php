@@ -12,7 +12,8 @@
                             <div class="trending-animated">
                                 <ul id="js-news" class="js-hidden">
                                     @foreach ($topPosts as $topost)
-                                    <li class="news-item"><a href="{{ $topost->slug }}">{{ $topost->title }}</a></li>
+                                    <li class="news-item"><a wire:navigate
+                                            href="{{ $topost->slug }}">{{ $topost->title }}</a></li>
                                     @endforeach
 
                                 </ul>
@@ -44,7 +45,8 @@
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color1">{{ $recent->categories[0]->title }}</span>
-                                            <h4><a href="/{{ $recent->slug }}">{{ $recent->title }}</a></h4>
+                                            <h4><a href="/{{ $recent->slug }}">{{ $recent->title }}</a>
+                                            </h4>
                                         </div>
                                     </div>
                                 </div>
@@ -155,7 +157,8 @@
                                                     </div>
                                                     <div class="what-cap">
                                                         <span class="color1">{{ $fpost->categories[0]->title }}</span>
-                                                        <h4><a href="{{ $fpost->slug }}">{{ $fpost->title }}</a>
+                                                        <h4><a wire:navigate
+                                                                href="{{ $fpost->slug }}">{{ $fpost->title }}</a>
                                                         </h4>
                                                     </div>
                                                 </div>
@@ -184,7 +187,8 @@
                                                     </div>
                                                     <div class="what-cap">
                                                         <span class="color1">{{ $fpost->categories[0]->title }}</span>
-                                                        <h4><a href="{{ $fpost->slug }}">{{ $fpost->title }}</a>
+                                                        <h4><a wire:navigate
+                                                                href="{{ $fpost->slug }}">{{ $fpost->title }}</a>
                                                         </h4>
                                                     </div>
                                                 </div>

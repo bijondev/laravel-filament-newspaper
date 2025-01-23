@@ -8,7 +8,8 @@
                         <div class="single-footer-caption">
                             <!-- logo -->
                             <div class="footer-logo">
-                                <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                <a wire:navigate href="{{ url('/') }}"><img src="assets/img/logo/logo2_footer.png"
+                                        alt=""></a>
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
@@ -96,9 +97,9 @@
                         <div class="footer-menu f-right">
                             <ul>
 
-                                <li><a href="#">Terms of use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a wire:navigate href="#">Terms of use</a></li>
+                                <li><a wire:navigate href="#">Privacy Policy</a></li>
+                                <li><a wire:navigate href="#">Contact</a></li>
                             </ul>
                         </div>
                     </div>

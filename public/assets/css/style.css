@@ -6798,6 +6798,18 @@ del {
 .switch-wrap {
     margin-bottom: 10px;
 }
+.feature-img {
+    text-align: center;
+}
 img.recent-second {
     max-height: 113px;
+    max-width: 170px;
+}
+img.recent-image {
+    max-width: 80px;
+}
+
+img.category-image {
+    max-height: 370px;
+    max-width: 344px;
 }

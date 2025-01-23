@@ -9,7 +9,7 @@ class Category extends Model
     protected $fillable = ['title', 'slug', 'image'];
 
     public function posts()
-    {
-        return $this->belongsToMany(Post::class);
-    }
+        {
+            return $this->belongsToMany(Post::class, 'category_post');
+        }
 }
