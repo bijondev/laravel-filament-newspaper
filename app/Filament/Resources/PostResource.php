@@ -65,6 +65,7 @@ class PostResource extends Resource
                         ->default('draft'),
                     Forms\Components\MultiSelect::make('categories')
                         ->preload()
+                        ->required()
                         ->relationship('categories', 'title'),
                 ])
                 ->columns(1)  // Single column for status & categories
@@ -86,9 +87,11 @@ class PostResource extends Resource
                 ->schema([
                     Forms\Components\TextInput::make('meta_keywords')
                         ->nullable()
+                        ->required()
                         ->maxLength(255),
                     Forms\Components\Textarea::make('meta_description')
                         ->nullable()
+                        ->required()
                         ->maxLength(255),
                 ])
                 ->columns(1)  // Single column layout

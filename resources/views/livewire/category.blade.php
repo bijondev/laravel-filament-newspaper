@@ -1,3 +1,4 @@
+@section('title', $category->title)
 <!-- Whats New Start -->
 <section class="whats-news-area pt-50 pb-20">
     <div class="container">

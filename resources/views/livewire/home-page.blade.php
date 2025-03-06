@@ -27,7 +27,7 @@
                         <!-- Trending Top -->
                         <div class="trending-top mb-30">
                             <div class="trend-top-img">
-                                <img src="{{ url('storage', $stiky->thumbnail )}}" alt="{{ $stiky->title }}">
+                                <img src="{{ url('uploads/user', $stiky->thumbnail )}}" alt="{{ $stiky->title }}">
                                 <div class="trend-top-cap">
                                     <span>{{ $stiky->categories[0]->title }}</span>
                                     <h2><a href="/{{ $stiky->slug }}">{{ $stiky->title }}</a></h2>
@@ -41,7 +41,7 @@
                                 <div class="col-lg-4">
                                     <div class="single-bottom mb-35">
                                         <div class="trend-bottom-img mb-30">
-                                            <img src="{{ url('storage', $recent->thumbnail )}}" alt="">
+                                            <img src="{{ url('uploads/user', $recent->thumbnail )}}" alt="">
                                         </div>
                                         <div class="trend-bottom-cap">
                                             <span class="color1">{{ $recent->categories[0]->title }}</span>
@@ -60,7 +60,7 @@
                         @foreach ($stikyseconds as $second)
                         <div class="trand-right-single d-flex">
                             <div class="trend-bottom-img mb-10">
-                                <img class="recent-second" src="{{ url('storage', $second->thumbnail )}}"
+                                <img class="recent-second" src="{{ url('uploads/user', $second->thumbnail )}}"
                                     alt="{{ $second->title }}">
                             </div>
                             <div class="trand-right-cap">
@@ -95,7 +95,7 @@
                             @foreach ($topPosts as $topost)
                             <div class="weekly-single">
                                 <div class="weekly-img">
-                                    <img src="{{ url('storage', $topost->thumbnail )}}" alt="">
+                                    <img src="{{ url('uploads/user', $topost->thumbnail )}}" alt="">
                                 </div>
                                 <div class="weekly-caption">
                                     <span class="color1">{{ $topost->categories[0]->title }}</span>
@@ -153,7 +153,7 @@
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="single-what-news mb-100">
                                                     <div class="what-img">
-                                                        <img src="{{ url('storage', $fpost->thumbnail )}}" alt="">
+                                                        <img src="{{ url('uploads/user', $fpost->thumbnail )}}" alt="">
                                                     </div>
                                                     <div class="what-cap">
                                                         <span class="color1">{{ $fpost->categories[0]->title }}</span>
@@ -183,7 +183,7 @@
                                             <div class="col-lg-6 col-md-6">
                                                 <div class="single-what-news mb-100">
                                                     <div class="what-img">
-                                                        <img src="{{ url('storage', $fpost->thumbnail )}}" alt="">
+                                                        <img src="{{ url('uploads/user', $fpost->thumbnail )}}" alt="">
                                                     </div>
                                                     <div class="what-cap">
                                                         <span class="color1">{{ $fpost->categories[0]->title }}</span>
@@ -209,11 +209,11 @@
                 </div>
                 <div class="col-lg-4">
                     <!-- Section Tittle -->
-                    <div class="section-tittle mb-40">
+                    <!-- <div class="section-tittle mb-40">
                         <h3>Follow Us</h3>
-                    </div>
+                    </div> -->
                     <!-- Flow Socail -->
-                    <div class="single-follow mb-45">
+                    <!-- <div class="single-follow mb-45">
                         <div class="single-box">
                             <div class="follow-us d-flex align-items-center">
                                 <div class="follow-social">
@@ -252,11 +252,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- New Poster -->
-                    <div class="news-poster d-none d-lg-block">
+                    <!-- <div class="news-poster d-none d-lg-block">
                         <img src="assets/img/news/news_card.jpg" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -282,7 +282,7 @@
                             @foreach ($latests as $latest)
                             <div class="single-recent mb-100">
                                 <div class="what-img">
-                                    <img src="{{ url('storage', $latest->thumbnail )}}" alt="">
+                                    <img src="{{ url('uploads/user', $latest->thumbnail )}}" alt="">
                                 </div>
                                 <div class="what-cap">
                                     <span class="color1">{{ $latest->categories[0]->title }}</span>

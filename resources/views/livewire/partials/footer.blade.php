@@ -1,12 +1,12 @@
 <footer>
     <!-- Footer Start-->
-    <div class="footer-area footer-padding fix">
+    <!-- <div class="footer-area footer-padding fix">
         <div class="container">
             <div class="row d-flex justify-content-between">
                 <div class="col-xl-5 col-lg-5 col-md-7 col-sm-12">
                     <div class="single-footer-caption">
                         <div class="single-footer-caption">
-                            <!-- logo -->
+                            logo
                             <div class="footer-logo">
                                 <a wire:navigate href="{{ url('/') }}"><img src="assets/img/logo/logo2_footer.png"
                                         alt=""></a>
@@ -19,7 +19,6 @@
                                         mauris pede for sectetuer.</p>
                                 </div>
                             </div>
-                            <!-- social -->
                             <div class="footer-social">
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -33,7 +32,6 @@
                         <div class="footer-tittle">
                             <h4>Newsletter</h4>
                             <p>Heaven fruitful doesn't over les idays appear creeping</p>
-                            <!-- Form -->
                             <div class="footer-form">
                                 <div id="mc_embed_signup">
                                     <form target="_blank"
@@ -74,7 +72,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- footer-bottom aera -->
     <div class="footer-bottom-area">
         <div class="container">
@@ -87,13 +85,12 @@
                                 Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
                                 </script> All rights reserved | This template is made with <i class="ti-heart"
-                                    aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                    target="_blank">Colorlib</a>
+                                    aria-hidden="true"></i> by <a href="https://bijon.me" target="_blank">bijon</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <!-- <div class="col-lg-6">
                         <div class="footer-menu f-right">
                             <ul>
 
@@ -102,7 +99,7 @@
                                 <li><a wire:navigate href="#">Contact</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
