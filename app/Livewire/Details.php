@@ -13,7 +13,9 @@ class Details extends Component
     public function mount($slug)
     {
         $this->slug = $slug;
+
         $this->post = Post::where('slug', $slug)->firstOrFail();
+        $this->post->increment('view');
     }
 
     public function render()
