@@ -30,7 +30,7 @@
                         <!-- Logo -->
                         <div class="col-xl-3 col-lg-3 col-md-3">
                             <div class="logo">
-                                <a href="{{ url('/') }}"><img src="assets/img/logo/logo.png" style="width: 200px;"
+                                <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo/logo.png') }}" style="width: 200px;"
                                         alt="{{ config('app.name') }}"></a>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                         <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                             <!-- sticky -->
                             <div class="sticky-logo">
-                                <a href="{{ url('/') }}"><img src="assets/img/logo/logo.png" style="width: 200px;"
+                                <a href="{{ url('/') }}"><img src="{{ url('assets/img/logo/logo.png') }}" style="width: 200px;"
                                         alt="{{ config('app.name') }}"></a>
                             </div>
                             <!-- Main-menu -->
@@ -56,9 +56,25 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="categori.html">Category</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="latest_news.html">Latest News</a></li>
+                                        <li><a href="#">Category</a>
+                                        <ul class="submenu">
+                                        @foreach ($CategoriesAll as $cata)
+                                            <li>
+                                                <a href="/category/<?php echo $cata->slug; ?>" >
+                                                    <p>{{ $cata->title }}</p>
+                                                </a>
+                                            </li>
+                                            @endforeach
+                                                </ul>
+                                            </li>
+
+                                        @foreach ($Categories as $cat)
+                                            <li>
+                                                <a href="/category/<?php echo $cat->slug; ?>" >
+                                                    <p>{{ $cat->title }}</p>
+                                                </a>
+                                            </li>
+                                            @endforeach
                                         <!-- <li><a href="contact.html">Contact</a></li> -->
 
                                     </ul>

@@ -20,7 +20,7 @@
             <ul class="list cat-list">
                 @foreach ($Categories as $cat)
                 <li>
-                    <a wire:navigate href="/category/<?php echo $cat->slug; ?>" class="d-flex">
+                    <a href="/category/<?php echo $cat->slug; ?>" class="d-flex">
                         <p>{{ $cat->title }}</p>
                         <!-- <p>(37)</p> -->
                     </a>
@@ -46,6 +46,4 @@
 
         </aside>
 
-
-      div/ div>
     </div>

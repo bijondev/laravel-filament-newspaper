@@ -7,7 +7,7 @@
     <meta name="keywords" content="@yield('keywords', 'lifestyleboosthq.xyz')">
     <meta name="description" content="@yield('description', 'lifestyleboosthq.xyz')">
     <title>@yield('title', 'lifestyleboosthq.xyz')</title>
-
+    <link rel="icon" type="image/x-icon" href="{{ url('/favicon.ico') }}">
     <!--  Essential META Tags -->
     <meta property="og:title" content="@yield('title', 'lifestyleboosthq.xyz')">
     <meta property="og:type" content="article" />

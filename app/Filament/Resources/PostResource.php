@@ -59,7 +59,7 @@ class PostResource extends Resource
                     ->default(false),
                     Forms\Components\Select::make('status')
                         ->options([
-                            'draft' => 'Draft',
+                            'unpublished' => 'Draft',
                             'published' => 'Published',
                         ])
                         ->default('draft'),
